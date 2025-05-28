@@ -1,0 +1,110 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #e6f2e6; /* very light pastel green */
+    font-family: 'Georgia', serif; /* elegant serif for soft, classy vibe */
+    color: #3a5d3a; /* darker pastel green */
+    line-height: 1.6;
+    padding: 30px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #f0faf0; /* very light green-white */
+    padding: 25px 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(58, 93, 58, 0.15);
+}
+
+.header h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #527752;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.container-image {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.container-image img {
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(82, 119, 82, 0.3);
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    animation: floatScale 5s ease-in-out infinite;
+}
+
+@keyframes floatScale {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+        filter: drop-shadow(0 5px 3px rgba(58, 93, 58, 0.15));
+    }
+    50% {
+        transform: translateY(-15px) scale(1.05);
+        filter: drop-shadow(0 10px 6px rgba(58, 93, 58, 0.25));
+    }
+}
+
+.section1, .section2 {
+    margin-bottom: 30px;
+}
+
+.section1 h2, .section2 h2 {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-size: 1.8rem;
+    color: #406340;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #8fbf8f;
+    padding-bottom: 5px;
+}
+
+.section1 p {
+    font-size: 1.1rem;
+    color: #4b6a4b;
+    line-height: 1.5;
+}
+
+.section2 ol {
+    padding-left: 20px;
+    color: #476947;
+    font-size: 1.05rem;
+}
+
+.section2 li {
+    margin-bottom: 12px;
+}
+
+.back-home {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.back-home a {
+    text-decoration: none;
+    background: #9ed89e;
+    color: #2f512f;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 12px;
+    box-shadow: 0 3px 7px rgba(46, 79, 46, 0.3);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.back-home a:hover {
+    background: #6fa86f;
+    color: #e6f2e6;
+    box-shadow: 0 5px 12px rgba(46, 79, 46, 0.6);
+}

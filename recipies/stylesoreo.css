@@ -1,0 +1,79 @@
+/* Reset default spacing */
+body, h1, h2, p, ol, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fff8f0;
+  padding: 20px;
+  color: #333;
+}
+
+.page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.header {
+  background-color: #6b4e71;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.image-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.image-container img {
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.description, .recipe-steps {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #6b4e71;
+}
+
+ol {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+ol li {
+  margin-bottom: 10px;
+}
+
+.back-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.back-link a {
+  color: #6b4e71;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}

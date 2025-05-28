@@ -1,0 +1,91 @@
+/* Reset and base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #6184a3; /* keep your blue */
+    font-family: 'Georgia', serif;
+    color: #e0e6f2; /* soft off-white for good contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 40px;
+    text-align: center;
+    border-bottom: 2px solid #486d8a;
+    padding-bottom: 15px;
+}
+
+.title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #dbe9f4;
+    text-transform: uppercase;
+}
+
+/* Recipe list container */
+.ulist {
+    width: 100%;
+    max-width: 600px;
+    background: #182b3f; /* slightly darker blue panel */
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.ulist ul {
+    list-style: none;
+}
+
+/* List items */
+.ulist li {
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover effect for sophistication */
+.ulist li:hover {
+    background-color: #182b3f;
+    transform: translateX(8px);
+}
+
+/* Links style - keep color but soften and unify font size */
+.ulist a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: 'Georgia', serif;
+    transition: color 0.3s ease;
+}
+
+/* Specific colors for each recipe */
+.recipie1 a {
+    color: #d64848; /* softened darkred */
+}
+
+.recipie2 a {
+    color: #4fa54f; /* softened darkgreen */
+}
+
+.recipie3 a {
+    color: #89aedf; /* navy but lighter */
+}
+
+/* Links hover color */
+.ulist a:hover {
+    color: #dbe9f4;
+}
